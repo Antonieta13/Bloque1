@@ -1,0 +1,100 @@
+@media screen and (min-width: 750px) {
+    .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        height: 80px;
+        padding-right: 7%;
+        margin: 0;
+    }
+    #logo {
+        top: 22px;
+        left: 7%;
+        bottom: 22px;
+        height: 36px;
+        width: 36px;
+    }
+
+    .nav .menuhamb > div {
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: 0px;
+        z-index: -1;
+        justify-content: center;
+        transition: 0.4s ease-in-out;
+    }
+    .nav .menuhamb > div:before {
+        content: "";
+        position: absolute;
+        top: -5px;
+        width: 100%;
+        height: 0px;
+        z-index: 0;
+    }
+    .nav .menuhamb > div:after {
+        content: "";
+        position: absolute;
+        top: 5px;
+        width: 100%;
+        height: 0px;
+        z-index: 1;
+    }
+    #hamburguesa:checked ~ .ul {
+        top: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        background-color: white;
+        z-index: 0;
+    }
+    #hamburguesa:checked ~ #menu {
+        display: flex;
+        justify-content: flex-end;
+        z-index: 2;
+        opacity: 1;
+    }
+    input[type="checkbox"] {
+        position: absolute;
+        top: 17px;
+        right: 15px;
+        width: 25px;
+        height: 13px;
+        z-index: 2;
+        opacity: 0;
+    }
+    .ul {
+        width: auto;
+        top: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        height: 80px;
+        z-index: 0;
+        width: auto;
+    }
+
+    #menu {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        z-index: 2;
+        height: 80px;
+        opacity: 1;
+    }
+
+    li {
+        background-color: white;
+        color: #060a24;
+        font-size: 16px;
+        height: 80px;
+        justify-content: center;
+        align-items: center;
+        padding-left: 68px;
+    }
+    a {
+        color: #060a24;
+    }
+}

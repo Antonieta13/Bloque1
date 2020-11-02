@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+}
+
+body {
+    background-color: white;
+    color: black;
+    font-family: "IBM Plex Mono", monospace;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    margin: 0px;
+}
+
+@import "./Desktop/header";
+@import "./Desktop/footer";
+@import "./Desktop/body";
+@import "./Mobile/header-mobile";
+@import "./Mobile/footer-mobile";
+@import "./Mobile/body-mobile";
